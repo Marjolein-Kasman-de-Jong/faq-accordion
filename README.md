@@ -3,7 +3,7 @@
 
 ### Description
 
-The [challenge](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz) was to build out this card component and get it looking as close to the design as possible.
+The [challenge](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz) was to build out this FAQ accordion and get it looking as close to the design as possible.
 
 Users should be able to:
 
