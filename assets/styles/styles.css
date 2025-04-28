@@ -139,3 +139,21 @@ main {
         border-radius: 16px;
     }
 }
+
+/* Heading */
+
+.heading-1 {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    .star-icon {
+        width: 24px;
+        height: 24px;
+
+        @media screen and (min-width: 600px) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
