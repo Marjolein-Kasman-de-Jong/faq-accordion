@@ -53,6 +53,10 @@ video {
     max-width: 100%;
 }
 
+:hover {
+    cursor: pointer;
+}
+
 /* Colors */
 
 :root {   
@@ -68,3 +72,42 @@ html {
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
 }
+
+.heading-1 {
+    color: var(--purple-950);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+
+    @media screen and (min-width: 600px) {
+        font-size: 3.5rem;
+    }
+}
+
+.faq-question {
+    color: var(--purple-950);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: normal;
+    transition: color .3s ease-in-out;
+
+    @media screen and (min-width:600px) {
+        font-size: 1.125rem;
+    }
+
+    &:hover {
+        color: var(--purple-600);
+    }
+}
+
+.faq-answer {
+    color: var(--purple-600);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 150%;
+
+    @media screen and (min-width: 600px) { 
+        font-size: 1rem;
+    }
+}
+
