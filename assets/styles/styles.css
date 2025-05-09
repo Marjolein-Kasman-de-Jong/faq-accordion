@@ -53,8 +53,10 @@ video {
     max-width: 100%;
 }
 
-:hover {
-    cursor: pointer;
+@media (hover: hover) {
+    :hover {
+        cursor: pointer;
+    }
 }
 
 /* Colors */
@@ -64,6 +66,7 @@ video {
     --purple-100: hsl(275, 100%, 97%);
     --purple-600: hsl(292, 16%, 49%);
     --purple-950: hsl(292, 42%, 14%);
+    --pink: hsla(281, 83%, 54%, 1);
 }
 
 /* Typography */
@@ -95,8 +98,10 @@ html {
         font-size: 1.125rem;
     }
 
-    &:hover {
-        color: var(--purple-600);
+    @media (hover: hover) {
+        &:hover {
+            color: var(--pink);
+        }
     }
 }
 
@@ -157,3 +162,73 @@ main {
         }
     }
 }
+
+/* FAQs */
+
+details {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--purple-100);
+    
+    &[open] {
+        gap: 24px;
+    }
+
+    @media screen and (min-width: 600px) {
+        padding: 24px 0;
+    }
+
+    &:first-of-type {
+        padding: 0 0 20px 0;
+        
+        @media screen and (min-width: 600px) {
+            padding: 0 0 24px 0;
+        }
+    }
+
+    &:last-of-type {
+        padding: 20px 0 0 0;
+        border-bottom: none;
+
+        @media screen and (min-width: 600px) {
+            padding: 24px 0 0 0;
+        }
+    }
+}
+
+/* FAQ question */
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    list-style: none;
+}
+
+.question {
+    width: 80.65%;
+
+    @media screen and (min-width: 600px) {
+        width: 88.27%;
+    }
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.icon-open {
+    display: none;
+  }
+  
+  details[open] .icon-closed {
+    display: none;
+  }
+  
+  details[open] .icon-open {
+    display: inline;
+  }
+
